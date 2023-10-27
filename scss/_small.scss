@@ -1,0 +1,95 @@
+/* Prevent adjustments of font size after orientation changes.  */
+html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+    height: 100%;
+    font-family: 'Sarabun', sans-serif;
+  }
+  
+  /*---- apply a natural box layout model to all elements -------*/
+  * {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    height: 100%;
+  }
+
+  header {
+    padding: .3rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+    h1 {
+      font-size: 1.5rem;
+    }
+  }
+  
+  .swiper, .swiper img {
+    width: 100%;
+    height: auto;
+}
+
+h2 {
+padding: 16px;
+}
+
+.animal-overlaying {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: .8rem;
+  section{
+    position: relative;
+    padding: 7px;
+
+    div {
+      padding-bottom: 8px;
+      background-color: black;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: .3rem .6rem;
+      h4{
+        display: inline-block;
+        color: white;
+      }
+      span {
+        color: rgb(23, 255, 23);
+        cursor: pointer;
+      }
+    }
+  
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  img:last-child {
+    position: absolute;
+    bottom: 0;
+  }
+}
+}
+
+.animal-clip-path {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 2.5vw;
+  section{
+    padding: 7px;
+    img {
+      width: 100%;
+      height: auto;
+      clip-path: circle(50% at 50% 50%);
+      transition: transform 1s;
+      &:hover {transform: rotate(15deg);}
+    }
+    
+  } //end section
+}
