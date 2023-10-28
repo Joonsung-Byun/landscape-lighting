@@ -42,12 +42,11 @@ padding: 16px;
 
 .animal-overlaying {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   padding: .8rem;
   section{
     position: relative;
     padding: 7px;
-
     div {
       padding-bottom: 8px;
       background-color: black;
@@ -92,4 +91,15 @@ padding: 16px;
     }
     
   } //end section
+}
+
+footer {
+  background-color: $menuColor;
+}
+
+footer p {
+  font-size: 1rem;
+  padding: .5rem;
+  text-align: center;
+  color: white;
 }
