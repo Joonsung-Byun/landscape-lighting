@@ -357,6 +357,18 @@ header a {
   height: auto;
 }
 
+.swiper-slide {
+  position: relative;
+}
+.swiper-slide .overlay {
+  position: absolute;
+  bottom: 20px;
+  color: white;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.5) 40%);
+  padding: 10px;
+  width: 100%;
+}
+
 h2 {
   padding: 16px;
 }
@@ -558,6 +570,10 @@ footer p {
   }
   nav li.active a {
     background-color: rgba(0, 0, 0, 0.2);
+  }
+  .swiper-slide .overlay {
+    font-size: 1.4rem;
+    padding: 20px;
   }
   .animal-clip-path section {
     padding: 10px;

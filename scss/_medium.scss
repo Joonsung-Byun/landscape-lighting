@@ -65,6 +65,13 @@ nav {
   li.active a {background-color: rgba(0,0,0,0.2)};
 }
 
+.swiper-slide {
+  .overlay {
+    font-size: 1.4rem;
+    padding: 20px;
+  }
+}
+
 .animal-clip-path {
     section{
       padding: 10px;
