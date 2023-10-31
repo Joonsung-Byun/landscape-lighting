@@ -334,12 +334,22 @@ body {
 header {
   padding: 0.3rem;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header div {
+  display: flex;
   justify-content: flex-start;
   align-items: center;
   gap: 8px;
+  padding-left: 0.5rem;
 }
 header h1 {
   font-size: 1.5rem;
+}
+header a {
+  text-decoration: none;
+  padding-right: 0.5rem;
 }
 
 .swiper, .swiper img {
@@ -493,6 +503,9 @@ footer p {
   header h1 {
     font-size: 1.8rem;
   }
+  header a {
+    font-size: 1.2rem;
+  }
   nav button {
     display: none;
   }
@@ -568,6 +581,9 @@ footer p {
   }
   header h1 {
     font-size: 2rem;
+  }
+  header a {
+    font-size: 1.4rem;
   }
   nav ul li a {
     font-size: 0.9rem;
